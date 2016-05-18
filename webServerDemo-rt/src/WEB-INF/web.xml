@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <display-name>Web Server Demo Servlets</display-name>
+
+  <servlet>
+    <servlet-name>myHttpServlet</servlet-name>
+    <servlet-class>demo.webserver.MyHttpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>myHttpServlet</servlet-name>
+    <url-pattern>/myFirstServlet/rocks/*</url-pattern>
+  </servlet-mapping>
+</web-app>

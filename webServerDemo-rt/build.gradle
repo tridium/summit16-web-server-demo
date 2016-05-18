@@ -1,0 +1,28 @@
+apply from: "${System.getenv("niagara_home")}/etc/gradle/niagara.gradle"
+
+ext {
+  name = "webServerDemo"
+  project.version = "1.0"
+  project.group = "niagara"
+  description = "Web Server Demo for the Niagara Summit 2016"
+}
+
+niagaraModule {
+  preferredSymbol = "wsd"
+  moduleName = "webServerDemo"
+  runtimeProfile = "rt"
+}
+
+dependencies {
+  compile 'Tridium:baja:4.0'
+  compile 'Tridium:nre:4.0'
+  compile 'Tridium:web-rt:4.0'
+  compile 'javax.servlet:javax.servlet-api:3.1.0'
+  compile 'org.owasp.encoder:encoder:1.1.1'
+}
+
+jar {
+  from('src') {
+    include 'WEB-INF/*.xml'
+  }
+}

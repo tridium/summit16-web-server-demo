@@ -1,0 +1,12 @@
+<!-- Types -->
+<types>
+  <!--demo-->
+  <!--demo.webserver-->
+  <type class="demo.webserver.BMyWebServlet" name="MyWebServlet"/>
+  <type class="demo.webserver.BMyComponent" name="MyComponent"/>
+  <type class="demo.webserver.BMyServletView" name="MyServletView">
+    <agent>
+      <on type="webServerDemo:MyComponent"/>
+    </agent>
+  </type>
+</types>

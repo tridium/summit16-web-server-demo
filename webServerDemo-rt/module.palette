@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="1.0">
+<p h="1" m="b=baja" t="b:UnrestrictedFolder">
+  <p n="MyWebServlet" m="wsd=webServerDemo" t="wsd:MyWebServlet"></p>
+  <p n="MyComponent" t="wsd:MyComponent"></p>
+</p>
+</bajaObjectGraph>
